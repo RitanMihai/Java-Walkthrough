@@ -1,4 +1,4 @@
-package oop;
+package college;
 
 public class Subject {
     private String abbreviation;

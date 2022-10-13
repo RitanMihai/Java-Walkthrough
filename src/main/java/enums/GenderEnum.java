@@ -1,4 +1,4 @@
-package oop.enums;
+package enums;
 
 /* Basic enum in Java */
 /* A more advanced example in CountryEnum */

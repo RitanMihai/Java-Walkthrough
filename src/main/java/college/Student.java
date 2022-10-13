@@ -1,7 +1,9 @@
-package oop;
+package college;
 
-import oop.enums.CountryEnum;
-import oop.enums.GenderEnum;
+import common.Citizen;
+import common.Human;
+import enums.CountryEnum;
+import enums.GenderEnum;
 
 import java.util.HashMap;
 import java.util.List;

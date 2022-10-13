@@ -1,4 +1,4 @@
-package oop.enums;
+package enums;
 
 /* A less advanced example in GenderEnum */
 public enum CountryEnum {
@@ -14,12 +14,7 @@ public enum CountryEnum {
             return true;
         }
     },
-    NOXUS("NOXUS") {
-        @Override
-        public Boolean isFictionalPlace() {
-            return true;
-        }
-    },
+    NOXUS("NOXUS"),
     OTHER("O") {
         @Override
         public Boolean isFictionalPlace() {
