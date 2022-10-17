@@ -13,9 +13,9 @@ public class EnumTest {
         assertEquals(GenderEnum.values()[2], GenderEnum.FEMALE);
 
         /* TODO: Uncomment the lines below and make the test pass */
-        //assertEquals(GenderEnum.MALE.getValue(), "M");
-        //assertEquals(GenderEnum.FEMALE.getValue(), "F");
-        //assertEquals(GenderEnum.OTHER.getValue(), "O");
+        assertEquals(GenderEnum.MALE.getValue(), "M");
+        assertEquals(GenderEnum.FEMALE.getValue(), "F");
+        assertEquals(GenderEnum.OTHER.getValue(), "O");
 
         assertSame(CountryEnum.NOXUS.isFictionalPlace(), Boolean.TRUE);
     }

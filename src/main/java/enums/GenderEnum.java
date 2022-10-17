@@ -5,7 +5,16 @@ package enums;
 public enum GenderEnum {
     /* As in other programming languages, enums have a default index starting from 0 for each constant */
     /* GenderEnum[ ] */
-    MALE,     /* [0] */
-    FEMALE,   /* [1] */
-    OTHER     /* [2] */
+    OTHER("O"),     /* [0] */
+    MALE("M"),   /* [1] */
+    FEMALE("F")     /* [2] */;
+
+    private String value;
+    GenderEnum(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

@@ -1,5 +1,7 @@
 package enums;
 
+import javax.swing.text.StyledEditorKit;
+
 /* A less advanced example in GenderEnum */
 public enum CountryEnum {
     ROMANIA("RO"),
@@ -14,7 +16,12 @@ public enum CountryEnum {
             return true;
         }
     },
-    NOXUS("NOXUS"),
+    NOXUS("NOXUS"){
+        @Override
+        public Boolean isFictionalPlace() {
+            return true;
+        }
+    },
     OTHER("O") {
         @Override
         public Boolean isFictionalPlace() {

@@ -6,11 +6,12 @@ import java.util.List;
 
 /* final keyword means that this class can not have anymore children */
 public final class Secretary {
-    public HashMap<Student, List<String>> documents = new HashMap<>();
+    private HashMap<Student, List<String>> documents = new HashMap<>();
 
     public HashMap<Student, List<String>> requestDocuments(Human human) throws Exception {
-        /* TODO implement the method in order to pass the tests */
-        return null;
+        if(human instanceof Student)
+            return new HashMap<>(this.documents);
+        throw new Exception("Access denied");
     }
 
     public void setDocuments(HashMap<Student, List<String>> documents) {

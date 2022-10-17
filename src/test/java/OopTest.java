@@ -50,7 +50,7 @@ public class OopTest {
         assertThrows(Exception.class, () -> secretary.requestDocuments((Human) teacher));
         /* Check the difference between == and equals in Java */
         assertEquals(studentDocuments, secretary.requestDocuments(student));  /* equivalent with a .equals verification */
-        assertNotSame(studentDocuments, secretary.requestDocuments(student)); /* equivalent with a == verification      */
+        assertNotSame(studentDocuments, secretary.requestDocuments(student)); /* equivalent with a != verification      */
     }
 
 
