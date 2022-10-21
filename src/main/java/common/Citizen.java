@@ -2,7 +2,13 @@ package common;
 
 import enums.CountryEnum;
 import enums.GenderEnum;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
+@Data
+@SuperBuilder
+@RequiredArgsConstructor
 public abstract class Citizen implements Human { /* the keyword implements is used only on interfaces, because
 interfaces impose methods, and down the line the child classes MUST IMPLEMENT the interface's methods */
 
