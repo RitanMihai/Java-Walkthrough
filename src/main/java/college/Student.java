@@ -1,23 +1,18 @@
 package college;
 
 import common.Citizen;
-import enums.GenderEnum;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.util.HashMap;
 import java.util.List;
 
-/* @Data documentation: https://projectlombok.org/features/GetterSetter  */
-@Data /* A combination of @Getter and @Setter */
-@ToString /* Generated default toString function */
+@Data /* @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor except @NoArgsConstructor */
 @SuperBuilder
-@RequiredArgsConstructor
-//@AllArgsConstructor
-//@NoArgsConstructor
-/* More about it here: https://refactoring.guru/design-patterns/builder */
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper=true)
+@ToString(callSuper=true)
 public class Student extends Citizen {
-
     private List<Subject> subjects;
     private HashMap<Subject, Integer> finalGrades;
 
