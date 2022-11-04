@@ -1,6 +1,6 @@
-package college;
+package model;
 
-import common.Human;
+import model.common.Human;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;

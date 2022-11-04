@@ -1,6 +1,6 @@
 package collections;
 
-import college.Student;
+import model.Student;
 
 import java.util.HashSet;
 import java.util.Set;

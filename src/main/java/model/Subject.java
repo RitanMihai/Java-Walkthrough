@@ -1,4 +1,4 @@
-package college;
+package model;
 
 import lombok.*;
 import java.io.Serializable;

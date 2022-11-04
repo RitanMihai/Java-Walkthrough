@@ -1,5 +1,6 @@
-import common.*; /* You can import the whole package, not commanded because, usually, you do not use the whole package */
-import college.*;
+import model.common.Citizen;
+import model.common.Human;
+import model.*; /* You can import the whole package, not commanded because, usually, you do not use the whole package */
 import org.junit.jupiter.api.Test;
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -14,7 +15,6 @@ public class OopTest {
     @Test
     public void testInheritanceStudent() {
         Human citizen = new Student();
-
         assertInstanceOf(Citizen.class, citizen);
         assertInstanceOf(Human.class, citizen);
     }
@@ -22,7 +22,6 @@ public class OopTest {
     @Test
     public void testInheritanceTeacher() {
         Teacher teacher = new Teacher();
-
         assertInstanceOf(Citizen.class, teacher);
         assertInstanceOf(Human.class, teacher);
     }

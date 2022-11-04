@@ -1,11 +1,11 @@
-package college;
+package model;
 
-import common.Citizen;
+import model.common.Citizen;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Data /* @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor except @NoArgsConstructor */
 @SuperBuilder
@@ -14,7 +14,7 @@ import java.util.List;
 @ToString(callSuper=true)
 public class Student extends Citizen {
     private List<Subject> subjects;
-    private HashMap<Subject, Integer> finalGrades;
+    private Map<Subject, Integer> finalGrades;
 
     @Override
     public void speak() {

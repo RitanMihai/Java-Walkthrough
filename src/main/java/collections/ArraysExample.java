@@ -10,13 +10,13 @@ public class ArraysExample {
     private List<Integer> integerArrayList;
 
     public ArraysExample() {
-        integerArrayList = new ArrayList<>(Arrays.asList(1,8,3,9,4,10,5));
+        integerArrayList = Arrays.asList(1,8,3,9,4,10,5);
     }
 
     public static void examplePrimitives() {
         System.out.println("\n========================= Arrays Primitives =========================");
         //Init the array via constructor
-        List<Integer> arrayList = new ArrayList<>(Arrays.asList(2, 3, 1, 4, 10, 0));
+        List<Integer> arrayList = Arrays.asList(2, 3, 1, 4, 10, 0);
 
         //CRUD operations
         //Create

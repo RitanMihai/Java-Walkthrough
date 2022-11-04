@@ -1,6 +1,6 @@
 package collections;
 
-import college.Student;
+import model.Student;
 import enums.RoleEnum;
 
 import java.util.HashMap;

@@ -1,6 +1,6 @@
-package college;
+package model;
 
-import common.Citizen;
+import model.common.Citizen;
 
 public class Teacher extends Citizen{
     @Override
